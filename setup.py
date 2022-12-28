@@ -13,14 +13,14 @@ except FileNotFoundError:
     )
 
 setuptools.setup(
-    name="faker-commerce",
-    version="1.0.3",
+    name="erp-faker-commerce",
+    version="1.0.4",
     author="Nicolas Ignacio Britos",
     author_email="nicbritos@hotmail.com",
     description="Provider for Faker which adds fake commerce product names, prices, categories and descriptions.",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/nicobritos/python-faker-commerce",
+    url="https://github.com/Kirom/erp-faker-commerce",
     packages=setuptools.find_packages(),
     install_requires=["faker"],
     classifiers=[

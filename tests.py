@@ -4,7 +4,7 @@ import unittest
 
 from faker import Faker, Generator
 
-import faker_commerce
+import erp_faker_commerce
 
 
 class IntegrationTestCase(unittest.TestCase):
@@ -12,7 +12,7 @@ class IntegrationTestCase(unittest.TestCase):
 
     def setUp(self):
         self.fake = Faker()
-        self.fake.add_provider(faker_commerce.Provider)
+        self.fake.add_provider(erp_faker_commerce.Provider)
 
     def test_integration(self):
         """Test integration with Faker."""
@@ -38,11 +38,11 @@ class EcommerceProviderTestCase(unittest.TestCase):
     # pylint: disable=protected-access
 
     def setUp(self):
-        self.provider = faker_commerce.Provider(Generator())
+        self.provider = erp_faker_commerce.Provider(Generator())
 
     def test_no_duplicates(self):
         """Test lists in root of module don't contain duplicates."""
-        for attr_name, attr in faker_commerce.__dict__.items():
+        for attr_name, attr in erp_faker_commerce.__dict__.items():
             with self.subTest(attr_name=attr_name):
                 if isinstance(attr, list):
                     self.assertEqual(len(attr), len(set(attr)))
