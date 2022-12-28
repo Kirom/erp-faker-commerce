@@ -1,4 +1,4 @@
-# python-faker-commerce
+# erp-faker-commerce
 Provider for [Faker](https://faker.readthedocs.io/) which adds fake commerce product names, prices, categories and descriptions.
 
 [![Issues](https://img.shields.io/github/issues/nicobritos/python-faker-commerce)](https://github.com/nicobritos/python-faker-commerce/issues)
@@ -8,7 +8,7 @@ Provider for [Faker](https://faker.readthedocs.io/) which adds fake commerce pro
 # Installation
 
 ```
-pipenv install faker-commerce
+pipenv install erp-faker-commerce
 ```
 
 # Usage
