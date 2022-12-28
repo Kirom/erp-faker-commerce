@@ -9,6 +9,7 @@ Provider for [Faker](https://faker.readthedocs.io/) which adds fake commerce pro
 
 ```
 pipenv install erp-faker-commerce
+pip install git+https://github.com/Kirom/erp-faker-commerce.git
 ```
 
 # Usage
